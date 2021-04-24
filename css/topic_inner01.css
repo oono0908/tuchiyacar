@@ -1,0 +1,71 @@
+.news-title {
+  background-color: #9163a7;
+  box-shadow: 0 5px 0 0  #652889;
+}
+
+.news .title-cover {
+  background-color: #9163a7;
+}
+
+.news .date {
+  background-color: #9163a7;
+  box-shadow: 0 5px 0 0  #652889;
+}
+
+.under-line {
+  background: #b89bc7;
+}
+
+.under-line:after {
+  background-image: url("../image/topic-car.svg");
+}
+
+.info {
+  width: 30%;
+  color: white;
+}
+
+.news-btn .btn-common {
+  background-color: #9163a7;
+}
+
+.to-all-btn {
+  background-color: #9163a7;
+}
+
+.contents {
+  margin-top: 80px;
+}
+
+.contents-title {
+  color: #652889;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-left: 2px solid #9163a7;
+  padding-left: 5px;
+}
+
+.contents-item {
+  margin-top: 10px;
+}
+
+.contents-item a {
+  color: #9163a7;
+}
+
+.contents-title {
+  color: #652889;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-left: 2px solid #9163a7;
+  padding-left: 5px;
+  margin-top: 80px;
+}
+
+.margin-top {
+  margin-top: 30px;
+}
+
+.btn-none {
+  opacity: 0;
+}

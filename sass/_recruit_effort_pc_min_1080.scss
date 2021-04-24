@@ -1,0 +1,146 @@
+@media screen and (min-width: 1080px) {
+  @import "recruit_common_pc.scss";
+  .hero{
+    .title{
+      display: none;
+    }
+    .top-img-sp{
+      display: none;
+    }
+    .top-devide{
+      display: flex;
+      align-items: center;
+      .top-img-pc{
+        width: 50%;
+      }
+      .top-right{
+        width: 50%;
+      }
+    }
+    .effort-title{
+      width: 40%;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .logo-wrapper{
+      display:flex;
+      width: 100%;
+      &__logo{
+        width: 12%;
+        display: block;
+      }
+    }
+    .logo-under-txt{
+      margin-top: 3%;
+      font-weight: normal;
+    }
+    .effort-title-img{
+      display: none;
+    }
+    .effort-title:after{
+      transform:rotate(-15deg);
+      left:50%;
+    }
+    .top-body-txt{
+      width: 50%;
+      margin: 3% auto 0;
+      font-size: 0.8rem;
+    }
+    .effort{
+      width: 60%;
+      margin: 0 auto;
+      .effort-sub-img{
+        width: 20%;
+        bottom: 30;
+        bottom: -70%;
+        right: 20%;
+      }
+    }
+    .effort-section:after{
+      display: none;
+    }
+    .effort-section {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      padding: 50px 20px 30px 20px;
+      .effort-inner{
+        font-size: 0.8rem;
+      }
+      .effort-balloon:after {
+        left:13%
+      }
+      .effort-balloon-wrapper{
+        top:-30%;
+        left: 40%;
+      }
+    }
+    .effort-section:nth-of-type(1) {
+      background-image: url("../image/bg_efforts01.png");
+    }
+    .effort-section:nth-of-type(2){
+      background-image: url("../image/bg_efforts02.png");
+      &:before{
+        display: none;
+      }
+    }
+    .effort-section:nth-of-type(3) {
+      background-image: url("../image/bg_efforts01.png");
+    }
+    .effort-section:nth-of-type(4) {
+      background-image: url("../image/bg_efforts02.png");
+    }
+    .effort-section__title{
+      .title-under{
+        top: 10%;
+        right: 40%;
+      }
+    }
+  }
+  .top-img-pc{
+    display: block;
+  }
+  .logo-wrapper{
+    display: block;
+    box-sizing: border-box;
+    .effort-title__logo{
+      margin-right:2px;
+      animation: popup 0.7s both;
+    }
+    .txt01{
+      animation-delay: 0.3s;
+    }
+    .txt02{
+      animation-delay: 0.4s;
+    }
+    .txt03{
+      animation-delay: 0.5s;
+    }
+    .txt04{
+      animation-delay: 0.6s;
+    }
+    .txt05{
+      animation-delay: 0.7s;
+    }
+    .txt06{
+      animation-delay: 0.8s;
+    }
+    .txt07{
+      animation-delay: 0.9s;
+    }
+    @keyframes popup{
+      0%{
+        transform: translateY(0);
+      }
+      50%{
+        transform: translateY(-10px);
+      }
+      100%{
+        transform: translateY(0);
+      }
+    }
+  }
+  .logo-under-txt{
+    display: block;
+  }
+}

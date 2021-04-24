@@ -1,0 +1,297 @@
+@import "recruit_common_iphoneX.scss";
+.l_home{
+  height:100vh;
+  overflow: scroll;
+}
+.car-pc{
+  display: none;
+}
+.hero{
+  width: 95%;
+  margin: 0 auto;
+  .title{
+    width: 25%;
+    &-img{
+      width: 100%;
+      margin-top: 100px;
+    }
+  }
+  .effort-title{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    position:relative;
+    &:after{
+      content: "";
+      position: absolute;
+    top: 100%;
+    left: 30%;
+    width: 6px;
+    height: 6px;
+    border-radius: 30px;
+    background-color: #2b2c2d;
+    box-shadow: 0 17px 0 0 #f5e71f, 0 35px 0 0 #2c2d2d;
+    }
+    &-img{
+      width: 50%;
+    }
+  }
+  .top{
+    width: 100%;
+    margin-top:50px;
+    &-img{
+      width: 70%;
+    }
+    &-title{
+      font-weight: bold;
+      font-size: 0.8rem;
+      text-align: center;
+      margin-top: 10px;
+    }
+    &-body-txt{
+      line-height: 1.5;
+      margin-top: 5px;
+    }
+  }
+  .top-img-pc{
+    display: none;
+  }
+  .logo-wrapper{
+    display: none;
+  }
+  .logo-under-txt{
+    display:none;
+  }
+}
+.effort{
+  padding-bottom: 150px;
+  position:relative;
+  z-index: 1;
+  &-section{
+    background-color: #f5e71f;
+    padding:65px 10px 30px 10px;
+    position:relative;
+    box-sizing: border-box;
+    margin-top: 150px;
+    position:relative;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    .highway{
+      width: 20px;
+      height: 100%;
+      background-color: #9c9d9e;
+      position: absolute;
+      bottom: -80%;
+      right: 10%;
+      z-index: -1;
+      &-inner{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .car{
+          width: 10px;
+          position:absolute;
+          left: 50%;
+          transform: translate(-50%);
+          z-index: 2;
+          animation: car 26s infinite linear;
+        }
+        .car02{
+          animation-delay: 2s;
+        }
+        .car03{
+          animation-delay: 4s;
+        }
+        .car04{
+          animation-delay: 7s;
+        }
+        .car05{
+          animation-delay: 9s;
+        }
+        .car06{
+          animation-delay: 11s;
+        }
+        .car07{
+          animation-delay: 14s;
+        }
+        .car08{
+          animation-delay: 16s;
+        }
+        .car09{
+          animation-delay: 17s;
+        }
+        .car10{
+          animation-delay: 20s;
+        }
+        .car11{
+          animation-delay: 22s;
+        }
+        .car12{
+          animation-delay: 24s;
+        }
+        @keyframes car{
+          0%{
+            top:0;
+          }
+          30%{
+            top:100%;
+          }
+        }
+      }
+      &:before{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 0;
+        height: 250px;
+        content: '';
+        border-left: 5px dashed #fff;
+      }
+    }
+    &:nth-of-type(1){
+      margin-top: 100px;
+      background-image: url("../image/training_bg02.svg");
+    }
+    &:nth-of-type(2){
+      background-image: url("../image/training_bg03.svg");
+      .highway{
+        right:80%;
+      }
+    }
+    &:nth-of-type(3){
+      background-image: url("../image/training_bg02.svg");
+    }
+    &:nth-of-type(4){
+      background-image: url("../image/training_bg03.svg");
+      .highway{
+        right:50%;
+        transform: translateX(50%);
+      }
+    }
+    &:nth-of-type(5){
+      background-image: url("../image/training_bg_sp.svg");
+      .title-top,.title-middle,.title-under{
+        background-color: #f5e71f;
+        color:#2b2c2d;
+      }
+      .effort-inner{
+        color: white;
+      }
+    }
+    .training-section-img{
+      width: 80%;
+      position: absolute;
+      bottom:-80%;
+      right:10%;
+      z-index: 10;
+      opacity:0;
+    }
+    .effort-balloon-wrapper{
+      position: absolute;
+      top: -15%;
+      left: 10%;
+      border-radius: 30px;
+      background-color: black;
+      display: inline-block;
+      transform: rotate(3deg);
+      opacity:0;
+    }
+    .is_balloon_active{
+      animation: shake 1s both;
+      opacity: 1;
+    }
+    @keyframes shake{
+      0%{
+        transform: rotate(-3deg)
+      }
+      20%{
+        transform: rotate(3deg)
+      }
+      40%{
+        transform: rotate(-3deg)
+      }
+      60%{
+        transform: rotate(3deg)
+      }
+      80%{
+        transform: rotate(-3deg)
+      }
+      100%{
+        transform: rotate(3deg)
+      }
+    }
+    .effort-balloon{
+      color: yellow;
+      padding:3px;
+      position: relative;
+      width: 100%;
+      &:after{
+        position: absolute;
+        top: calc(100% - 3px);
+        right: 13%;
+        display: block;
+        width: 1em;
+        height: 1em;
+        content: '';
+        transform: translateX(13%);
+        background-image: url("../image/balloon_logo.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+    &__title{
+      width:100%;
+      top: -20px;
+      font-size: 1.1rem;
+      .title-top{
+        display: inline-block;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        position:absolute;
+        top:-5%;
+        left: 10%;
+        padding:2px;
+      }
+      .title-middle{
+        display: inline-block;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        position:absolute;
+        padding:2px;
+        top:7%;
+        right: 35%;
+      }
+      .title-under{
+        display: inline-block;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        position:absolute;
+        padding:2px;
+        top: 19%;
+        right: 10%;
+      }
+      .title-middle-position{
+        right:5%;
+      }
+    }
+  }
+  &-inner{
+    line-height: 1.7;
+  }
+.title-middle-pc{
+  display: none;
+}
+.highway-pc01,.highway-pc02{
+  display: none;
+}
+}
+.detaile{
+  display: none;
+}

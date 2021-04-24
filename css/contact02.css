@@ -1,0 +1,149 @@
+.l_main {
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.hero .title {
+  margin-top: 100px;
+  width: 25%;
+}
+
+.hero .title-img {
+  width: 100%;
+}
+
+.l_footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.l_footer .footer-logo {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero .form-title {
+  width: 100%;
+  background-color: yellowgreen;
+  color: white;
+  font-weight: bold;
+  padding: 15px 0;
+  border-radius: 30px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  margin: 30px auto 0;
+}
+
+.hero .form-title:before {
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 6px);
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 12px 7.5px 0;
+  border-style: solid;
+  border-color: #bad200 transparent transparent;
+}
+
+.hero .error-message {
+  color: red;
+  margin-top: 20px;
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.contact-form-persons-info {
+  padding-bottom: 20px;
+  border-bottom: 2px solid yellowgreen;
+}
+
+.contact-form-title {
+  margin-top: 20px;
+}
+
+.contact-form-title .must {
+  color: red;
+}
+
+.contact-form .form-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form .form-data-right {
+  width: 47%;
+}
+
+.contact-form .form-data-left {
+  width: 47%;
+}
+
+.contact-form .form-data-text {
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+  border-color: #fc053e;
+  background-color: #fee5eb;
+}
+
+.contact-form .form-data .is_true {
+  background-color: white;
+  border: 1px solid yellowgreen;
+}
+
+.contact-form .form-data .width-max {
+  width: 100%;
+}
+
+.contact-form .default-color {
+  background-color: white;
+  border: 1px solid yellowgreen;
+}
+
+.job-experience {
+  display: none;
+}
+
+.background {
+  display: none;
+}
+
+.to-confirmation-page {
+  width: 70%;
+  margin: 30px auto 30px;
+  background-color: #fee5eb;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 30px;
+}
+
+.to-confirmation-page a {
+  color: white;
+  text-decoration: none;
+}
+
+.l_footer {
+  position: static;
+}

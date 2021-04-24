@@ -1,0 +1,175 @@
+@import "recruit_common_iphoneX.scss";
+.hero{
+  width: 95%;
+  margin: 0 auto;
+  .title{
+    width: 25%;
+    &-img{
+      width: 100%;
+      margin-top: 100px;
+    }
+  }
+}
+.title-cross-talk01{
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
+  &__img{
+    width: 70%;
+  }
+  &::before{
+    position: absolute;
+    content: "";
+    top: 100%;
+    right: 30%;
+    width: 6px;
+    height: 6px;
+    border-radius: 30px;
+    background-color: #2b2c2d;
+    box-shadow: 0 17px 0 0 #f5e71f, 0 35px 0 0 #2c2d2d;
+  }
+}
+.hero-talk-img{
+  width: 80%;
+  margin-top: 50px;
+}
+.hero-talk-txt{
+  width: 100%;
+  line-height: 2.0;
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
+.profile{
+  width: 100%;
+  &__title{
+    width: 100%;
+    text-align: center;
+    margin-top:30px;
+    position: relative;
+    &-img{
+      width: 30%;
+    }
+    &:before{
+    position:absolute;
+    background-image: url("../image/profile-dots01.svg");
+    background-size: contain;
+    background-position: left center;
+    width: 80px;
+    height: 5px;
+    content: "";
+    top:50%;
+    transform: translateY(-50%);
+    left:10%;
+    }
+    &:after{
+      position:absolute;
+      background-image: url("../image/profile-dots01.svg");
+      background-size: contain;
+      background-position: left center;
+      width: 80px;
+      height: 5px;
+      content: "";
+      top:50%;
+      transform: translateY(-50%);
+      right:10%;
+      }
+  }
+  &-person{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 0;
+    &__img{
+      width: 45%;
+      display: block;
+    }
+  }
+}
+.session{
+  width: 100%;
+  &__title{
+    width:100%;
+    margin-top: 30px;
+    &-img{
+      width: 30%;
+    }
+  }
+  &__conversation-title{
+    display: inline-block;
+    background-color: black;
+    color: yellow;
+    margin-top: 10px;
+  }
+  &-talk{
+    background-color: white;
+    width:100%;
+    margin-top: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    &__question{
+      font-weight: bold;
+      font-size: 0.9rem;
+      margin-top: 20px;
+    }
+  }
+  .talk-detail{
+    width: 100%;
+    position:relative;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+  .watanabe:before{
+    content: '渡部';
+    color: #fff;
+    background-color: #256ff2;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  .kamata:before{
+    content: "蒲田";
+    color: #fff;
+    background-color: red;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+}
+.talk-inner-btn{
+  width:60%;
+  margin:50px auto 0;
+  display: flex;
+  justify-content: space-between;
+  &-img{
+    width:45%;
+  }
+  .img-back{
+    opacity: 0;
+  }
+}
+.cross-talk-list{
+  width: 90%;
+  margin: 50px auto 0;
+  &__item{
+    width: 100%;
+    margin-top: 20px;
+    .cross-talk__img{
+      width: 100%;
+    }
+  }
+  .recruit-click-after{
+    display: none;
+  }
+}
+.hero-talk-img-pc{
+  display:none;
+}
+.person-left{
+  display: none;
+}
+.person-right{
+  display: none;
+}
+.btn-txt{
+  display: none;
+}

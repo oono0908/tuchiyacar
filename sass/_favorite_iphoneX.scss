@@ -1,0 +1,30 @@
+.l_main{
+  background-color: #73502d;
+  padding-top: 100px;
+  padding-bottom:30px;
+}
+.favorite-img{
+  width: 45%;
+  display: block;
+  margin-left:40px;
+}
+.favorite-img-pc{
+  display: none;
+}
+.select{
+  width: 50%;
+  margin: 20px auto 0;
+  &-inner{
+    width: 100%;
+    display: inline-block;
+    height: 50px;
+  }
+}
+.l_footer{
+  position: absolute;
+}
+
+.nav-wrapper{
+  display: none;
+}
+

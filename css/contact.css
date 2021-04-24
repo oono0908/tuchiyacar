@@ -1,0 +1,50 @@
+.l_main {
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.hero .title {
+  margin-top: 100px;
+  width: 25%;
+}
+
+.hero .title-img {
+  width: 100%;
+}
+
+.l_footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.l_footer .footer-logo {
+  display: none;
+}
+
+.l_main {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-title-sub {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.contact {
+  display: none;
+}
+
+.error-message {
+  display: none;
+}
+
+.form-title:before {
+  display: none;
+}

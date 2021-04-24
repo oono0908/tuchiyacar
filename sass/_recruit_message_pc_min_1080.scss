@@ -1,0 +1,141 @@
+@media screen and (min-width: 1080px) {
+  @import "recruit_common_pc.scss";
+  .hero{
+    .title{
+      display: none;
+    }
+  }
+  .l_header{
+  .title__logo-img-pc{
+    z-index: 1;
+  }
+}
+  .top-img{
+    display: none;
+  }
+  .hero-top-devide{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    .hero-top-left{
+      width: 60%;
+    }
+    .top-img-pc{
+      width: 85%;
+    }
+    .hero-top-right{
+      width: 40%;
+    }
+    .top-txt{
+      width: 70%;
+      margin-top:10%;
+      margin-left:15%;
+      font-size: 0.8rem;
+    }
+    .message-title{
+      &:after{
+        left: 50%;
+        top:100%;
+      }
+    }
+  }
+  .recruit-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+    margin: 10% auto 0;
+    &__item{
+      width:48%;
+      .recruit-click-after{
+        display:flex;
+        &__txt{
+          display: inline-block;
+          &:before{
+            width:30px;
+            height: auto;
+            top:auto;
+          }
+        }
+      }
+      .detaile{
+        padding: 20px;
+        font-size: 1.4rem;
+        line-height: 1.3;
+      }
+    }
+  }
+  .info-title-pc-wrapper{
+    z-index: 5;
+    width: 90%;
+    box-sizing: border-box;
+    display: block;
+    .info-title-pc{
+      display:flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      &__txt{
+        margin-right:1%;
+        animation: popup 0.7s both;
+        &-img{
+          width: 100%;
+        }
+      }
+      .logo01{
+        animation-delay: 0.3s;
+      }
+      .logo02{
+        animation-delay: 0.4s;
+      }
+      .logo03{
+        animation-delay: 0.5s;
+      }
+      .logo04{
+        animation-delay: 0.6s;
+      }
+      .logo05{
+        animation-delay: 0.7s;
+      }
+      .logo06{
+        animation-delay: 0.8s;
+      }
+      .logo07{
+        animation-delay: 0.9s;
+      }
+      @keyframes popup{
+        0%{
+          transform: translateY(0);
+        }
+        50%{
+          transform: translateY(-10px);
+        }
+        100%{
+          transform: translateY(0);
+        }
+      }
+    }
+    .info-title-txt{
+      text-align: left;
+      margin-top: 2%;
+    }
+  }
+  .hero .message-title__img{
+    display: none;
+  }
+  .hero .message-title:after{
+    left:30%;
+  }
+  .info-title-pc-wrapper .info-title-pc{
+    justify-content: left;
+  }
+  .hero-top-devide .top-txt{
+    margin-left:0;
+    margin-top:20%;
+  }
+  .top-img-pc{
+    display: block;
+  }
+}

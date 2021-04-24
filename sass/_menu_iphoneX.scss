@@ -1,0 +1,141 @@
+@import "contact_common.scss";
+*{
+  text-decoration: none;
+}
+.menu-title{
+  width: 100%;
+  text-align: center;
+  margin-top: 150px;
+  &__img{
+    width: 60%;
+  }
+}
+.menu-search{
+  display: flex;
+  width:60%;
+  justify-content: space-between;
+  margin: 30px auto 0;
+  &__left{
+    width: 50%;
+    height: 10vw;
+    background-color: #ffebd9;
+    position: relative;
+    padding-left:10px;
+   line-height: 10vw;
+   box-sizing: border-box;
+   color: #ff7900;;
+    &:before{
+      content: '';
+      width: 8vw;
+      height: 100%;
+      display: block;
+      background-color: #ff7900;
+      position: absolute;
+      top: 0;
+      right: 0;
+      pointer-events: none;
+      z-index: 1;
+    }
+    &:after{
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6.9px 4px 0;
+      border-color: #fff transparent transparent;
+      position: absolute;
+      top: 50%;
+      right: 2.9vw;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+    .select{
+      width: 100%;
+      height: 100%;
+      opacity:0;
+    }
+  }
+  &__right{
+    width: 30%;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff7900;
+    color:white;
+    border-radius: 30px;
+  }
+}
+.menu-list{
+  width: 90%;
+  margin:0 auto;
+  &__item{
+    padding: 0 10px;
+    width:100%;
+    margin: 20px auto;
+    background-color:  #ffebd9;
+    box-sizing: border-box;
+    a{
+      color: black;
+    }
+    .item-title{
+      font-size: 0.8rem;
+      padding:15px 0;
+      border-bottom: 1px solid  #ff7900;
+      
+    }
+    .item-txt{
+      font-weight: bold;
+      padding:15px 0;
+      font-size: 0.9rem;
+    }
+  }
+}
+.page-num-list{
+  display:flex;
+  width:60%;
+  margin: 30px auto 0;
+  justify-content: space-between;
+  &__item{
+    width: 15%;
+    text-align: center;
+    padding:10px 0;
+    box-sizing: border-box;
+    opacity: 0.6;
+    font-weight: bold;
+    position: relative;
+    a{
+      color: #ff7900;
+    }
+    &:first-child{
+      display: none;
+    }
+    &:last-child{
+      background-color:  #ff7900;
+      width:5vw;
+      height:10vw;
+      border-radius:0 5vw 5vw 0;
+      position: relative;
+      &:before{
+        top: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 0;
+        height: 0;
+        content: '';
+        border-style: solid;
+        border-color: transparent;
+        border-width: 5px 0 5px 5px;
+        border-left-color: white;
+      }
+    }
+  }
+}
+.is_color_on{
+  opacity:1
+}
+.l_footer{
+  position: static;
+  margin-top: 50px;
+}

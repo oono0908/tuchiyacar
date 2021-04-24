@@ -1,0 +1,97 @@
+@media screen and (min-width: 1080px) {
+  @import "recruit_common_pc.scss";
+  .hero{
+    .title{
+      display: none;
+    }
+    .q-and-a-title{
+      width: 50%;
+      margin: 10% auto 0;
+    }
+    .question-left{
+      animation: pop1 2s linear infinite;
+     }
+     .question-right{
+      animation: pop2 2s linear infinite;
+     }
+     @keyframes pop1{
+       0%{
+         transform: translateY(-50%);
+       }
+       20%{
+        transform: translateY(-50%);
+      }
+      21%{
+        transform: translateY(-53%)
+      }
+      22%{
+        transform: translateY(-50%)
+      }
+      60%{
+        transform: translateY(-50%)
+      }
+      61%{
+        transform: translateY(-53%)
+      }
+      62%{
+        transform: translateY(-50%)
+      }
+      67%{
+        transform: translateY(-50%)
+      }
+      68%{
+        transform: translateY(-53%)
+      }
+      69%{
+        transform: translateY(-50%)
+      }
+     }
+     @keyframes pop2{
+      0%{
+        transform: translateY(-50%);
+      }
+      40%{
+       transform: translateY(-50%);
+     }
+     41%{
+       transform: translateY(-53%)
+     }
+     42%{
+      transform: translateY(-50%)
+    }
+     75%{
+       transform: translateY(-50%)
+     }
+     76%{
+       transform: translateY(-53%)
+     }
+     77%{
+      transform: translateY(-50%)
+    }
+    }
+    .q-and-a-body{
+      width: 60%;
+      margin: 10% auto 0;
+      &__title{
+        font-size: 1.3rem;
+        display: inline-block;
+        width: auto;
+        &:before{
+          display: none;
+        }
+        .q-logo-img{
+          width:20px;
+          left:-30px;
+        }
+      }
+    }
+    .q-and-a-body__answear{
+      &-txt{
+        height: auto;
+        font-size: 0.8rem;
+        line-height: 1.3;
+        margin-top: 20px;
+      }
+    }
+  }
+}

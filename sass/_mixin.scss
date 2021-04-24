@@ -1,0 +1,37 @@
+
+@mixin flash1{
+  animation: flash1 1s linear infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@mixin flash2{
+  animation: flash2 1s linear infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@mixin flash3{
+  animation: flash3 1s linear infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@mixin blendImg{
+  content:"";
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 45px;
+  height: 45px;
+  margin: 0 10px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left: 0;
+}
+
+@mixin selectTime{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 110%;
+}

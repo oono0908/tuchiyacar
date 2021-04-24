@@ -1,0 +1,25 @@
+
+
+.recruit-btn{
+  width:140px;
+  height:140px;
+  transition: 0.3s;
+}
+.recruit-btn-active{
+  width: 140px;
+  height: 140px;
+  position:absolute;
+  background-color: rgb(206, 65, 65);
+  text-align: center;
+  line-height: 140px;
+  border-radius: 50%;
+  color:white;
+  font-size: 0.8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+  opacity:0;
+  transition: 0.3s;
+  
+}

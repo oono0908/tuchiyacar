@@ -1,0 +1,97 @@
+@import "recruit_common_iphoneX.scss";
+
+.hero{
+  width: 95%;
+  margin: 0 auto;
+  .title{
+    width: 25%;
+    &-img{
+      width: 100%;
+      margin-top: 100px;
+    }
+  }
+
+  .q-and-a-title{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    &__img{
+      width:30%;
+    }
+  }
+  .question-logo{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width:15%;
+  }
+  .question-left{
+   left: 17%;
+  }
+  .question-right{
+    right:17%;
+  }
+  .q-and-a-body{
+    width: 100%;
+    &__title{
+      background-color: black;
+      color: yellow;
+      width: 90%;
+      position:relative;
+      margin-left: 30px;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      transition: 0.3s;
+      padding: 5px;
+      &:before{
+        content:url("../image/arrow-under.svg");
+        position: absolute;
+        width: 5%;
+        top:50%;
+        transform: translateY(-50%);
+        right:0;
+        transition: 0.3s;
+      }
+      .q-logo-img{
+        position: absolute;
+        width: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        left:-8%;
+      }
+    }
+    .is_arrow_rotate{
+      &:before{
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+  .q-and-a-body__answear{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: 0.2s;
+    &-txt{
+      line-height: 2.5;
+      display: inline-block;
+      vertical-align: middle;
+      transition: 0.2s;
+      height:0;
+      &:before{
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        content: '';
+        vertical-align: middle;
+        background-image: url("../image/a_logo.svg");
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: .9em;
+      }
+    }
+    .is_answear_active{
+      height: auto;
+    }
+  }
+}

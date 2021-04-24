@@ -1,0 +1,268 @@
+@media screen and (min-width: 1080px) {
+  .l_home{
+    overflow: hidden;
+    position: relative;
+  }
+  .l_groval-container{
+    overflow: scroll;
+    width: 100vw;
+    height: 100vh;
+  }
+  .l_main{
+    width: 70%;
+    margin-bottom:20%;
+    .car-detail{
+      width:50%;
+      transform: translateX(-10%);
+    }
+    .star{
+      width:30%;
+      margin-top: 10%;
+    }
+    .top-line{
+      width:100%;
+      box-sizing: border-box;
+      .line{
+        width:60%;
+      }
+      .store-name{
+        width: 10%;
+        text-align: center;
+        font-size: 1.3rem;
+      }
+      .phone-number{
+        width:30%;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+    .car-detail-body{
+      .title__img{
+        width:10%;
+        margin-top:2%;
+      }
+      .car-name{
+        margin-top: 2%;
+      }
+      .car-main{
+        margin-top:5%;
+      }
+    }
+    .car-price-top-sp{
+      display: none;
+    }
+    .car-price-under-sp{
+      display: none;
+    }
+    .car-price-top-pc{
+      margin-top:10%;
+      .car-price-top__left{
+        width:80%;
+        font-size: 1.7rem;
+      }
+    }
+    .car-price-under-pc{
+      margin-top:10%;
+      .total{
+        width: 55%;
+      }
+      .car-price-under__left{
+        width:15%;
+        font-size: 1.7rem;
+      }
+      .car-price-under__right{
+        width:30%;
+      }
+    }
+    .link-btn-sp{
+      display: none;
+    }
+    .baner-sp{
+      display: none;
+    }
+    .total-reputation{
+      margin-top: 10%;
+    }
+  }
+  .link-btn{
+    width: 60%;
+    margin:5% auto 0;
+    .baner{
+      width:45%;
+      margin: 0;
+    }
+    .like-add{
+      width:45%;
+    }
+  }
+  .useful-func{
+    .detail-list{
+      &__item{
+        width:33%;
+        margin-top:3%;
+        .subject{
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .detail-list{
+    &__item{
+      margin-top:3%;
+      .subject{
+        font-size: 1rem;
+      }
+    }
+  }
+  .func-devide{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .func-item{
+      width: 31%;
+      margin-top:3%;
+      .detail-list{
+        &__item{
+          width:auto;
+        }
+        .subject{
+          font-size: 1rem;
+        }
+      }
+    }
+    .func-item-width{
+      width:62%;
+    }
+  }
+  .car-info-title__txt{
+    font-weight: bold;
+    text-align: center;
+  }
+  .car-inner-top-devide{
+    display: flex;
+    justify-content: space-between;
+  }
+  .car-inner-top-left{
+    width: 49%;
+  }
+  .car-inner-top-right{
+    width: 49%;
+  }
+  .phone-pc{
+    display: none;
+  }
+  .link-btn-pc-under{
+    width:30%;
+    .like-add{
+      width: 100%;
+    }
+  }
+  .store-info{
+    position:relative;
+    .store-map{
+      position: absolute;
+      top: 10%;
+      right: -5%;
+      width: 40%;
+      border-bottom: none;
+    }
+    .store-name{
+      border-top: 1px solid yellowgreen;
+      width: 70%;
+      padding:10px 0;
+    }
+  }
+  .store-info__title{
+    border-bottom: none;
+  }
+  .store-info__title-img{
+    width: 30%;
+  }
+  .baner{
+  .tuchiya-movie{
+    &-inner{
+      width:700px;
+      height:450px;
+      left:50%;
+      transform:translate(-50%,-50%);
+    }
+  }
+}
+  .item-devide{
+    display:flex;
+    width:70%;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    &__left{
+      width:50%;
+    }
+    &__right{
+      width: 50%;
+    }
+  }
+  .l_header{
+    width: 70%;
+    margin: 0 auto;
+    z-index: 1;
+    justify-content: space-between;
+    .title{
+      padding: 0;
+      width:30%;
+      &-link{
+        width: 100%;
+      }
+      &__logo{
+        width: 20%;
+        &-img-pc{
+          width: 90%;
+          animation: rotate 5s linear infinite;
+        }
+        @keyframes rotate {
+          0%{
+            transform: translateX(0) rotate(0deg);
+          }
+          100%{
+            transform: translateX(0) rotate(360deg);
+          }
+        }
+      }
+      &__txt{
+        margin-left: 1%;
+        width: 80%;
+        &-img-pc{
+          max-width: 100%;
+        }
+      }
+    }
+    .link-list{
+      position: static;
+    }
+    .inquire{
+      display: none;
+    }
+    .search{
+      display: none;
+    }
+  }
+  .icon-wrapper{
+    display: none;
+  }
+  .l_footer{
+    .list{
+      display: none;
+    }
+  }
+  .phone-number{
+    display: block;
+  }
+  .link-btn-pc{
+    display: flex;
+  }
+  .inquire{
+    display: none;
+  }
+  .search{
+    display: none;
+  }
+}

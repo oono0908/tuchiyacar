@@ -1,0 +1,373 @@
+@import "recruit_common_iphoneX.scss";
+.l_home{
+  overflow: scroll;
+  width:100vw;
+  height: 100vh;
+}
+.l_groval_wrapper{
+  overflow: hidden;
+}
+.hero{
+  &-title{
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    &__img{
+      width: 60%;
+    }
+    &:after{
+      position:absolute;
+      content: "";
+      top: 100%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    transform: translateX(-50%) rotate(10deg);
+    border-radius: 30px;
+    background-color: #2b2c2d;
+    box-shadow: 0 17px 0 0 #f5e71f, 0 35px 0 0 #2c2d2d;
+    }
+  }
+  &-pic{
+    width:70%;
+    margin-top:50px;
+  }
+  &-sub-title{
+    font-weight: bold;
+    line-height: 1.3;
+    margin-right:10px;
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+  &-txt{
+    margin-top: 5px;
+    line-height: 1.3;
+    margin-right:10px;
+    font-size: 0.9rem;
+  }
+}
+.story-title{
+  text-align: center;
+  width: 100%;
+  margin-top: 70px;
+  &__img{
+    width: 50%;
+  }
+  &__txt{
+    line-height: 1.3;
+    margin-top: 10px;
+  }
+}
+.story-list{
+  width: 90%;
+  margin: 0 auto;
+  &__item{
+    background-color: #2b2c2d;
+    padding:10px;
+    margin-top: 150px;
+    &:nth-of-type(2){
+      background-color: white;
+      .story-item__txt{
+        color:black;
+      }
+      .story-item__img02{
+        margin-top:110px;
+        width: 30%;
+        float: left;
+        shape-outside: polygon(0 0, 0 53%, 120px 53%, 120px 100%, 0 100%);
+      }
+    }
+    &:nth-of-type(3){
+      background-color: white;
+      .story-item__img{
+        margin: 0;
+      }
+      .story-item__txt{
+        color:black;
+      }
+    }
+  }
+  .story-item__img{
+    width: 90%;
+    margin:-60px auto 0;
+    display: block;
+  }
+  .story-item__txt{
+    line-height: 1.3;
+    color: white;
+    margin-top: 10px;
+  }
+}
+.storycolumn{
+  width: 100vw;
+  // height: 700px;
+  position: relative;
+  .car{
+    width: 100px;
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    transition:3s;
+    z-index: 5;
+    &-inner{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      .car-txt-img{
+        position: absolute;
+        top:-80%;
+        left:-50%;
+        width: 90%;
+      }
+      .car-img{
+        width: 100%;
+      }
+      .car-smoke{
+        position: absolute;
+        bottom: -55%;
+        left:105%;
+        width: 200%;
+        animation: smoke .5s steps(4) 0s infinite alternate;
+      }
+      @keyframes smoke{
+        0%{
+          transform: translateX(0) scale(1);
+        }
+        100%{
+          transform: translateX(20%) scale(1.4);
+        }
+      }
+    }
+  }
+  .car-smoke-after1{
+    width: 50%;
+    position: absolute;
+    top:10%;
+    left:10%;
+    opacity:0
+  }
+  .car-smoke-after2{
+    width: 50%;
+    position: absolute;
+    top:60%;
+    right:10%;
+    opacity:0
+  }
+  .is_smoke_show1{
+    animation: scaleup 2s both;
+    animation-delay: 1.5s;
+  }
+  .is_smoke_show2{
+    animation: scaleup 2s both;
+    animation-delay: 2s;
+  }
+@keyframes scaleup {
+  0%{
+    transform: scale(0);
+  }
+  70%{
+    transform: scale(2);
+    opacity:1;
+  }
+  100%{
+    transform: scale(2);
+    opacity:0;
+  }
+}
+
+.storycolumn-txt-wrapper{
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding:20px;
+  box-sizing: border-box;
+  z-index: 1;
+  .smoke-bg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+  z-index: -1;
+  opacity: 0;
+  }
+  
+  .storycolumn-title{
+    position: relative;
+  }
+  .storycolumn-number-img{
+    width: 20%;
+  }
+  .storycolumn-txt{
+    line-height: 1.5;
+  }
+  .title-txt{
+    width:80%;
+    font-size: 1.2rem;
+    line-height: 2;
+    font-weight: bold;
+    color:red;
+    position:absolute;
+    bottom: 0;
+    left:25%;
+  }
+  .story-column-inner{
+    opacity: 0;
+  }
+}
+.is_smoke-bg_active{
+  animation: scaleup2 3.5s both;
+  animation-delay: 2.5s;
+}
+.is_txt_active{ 
+  animation: show 1.5s both;
+  animation-delay: 4s;
+}
+@keyframes scaleup2{
+  0%{
+    width: 10%;
+    opacity:0;
+  }
+  20%{
+    width: 10%;
+    opacity: 0.3;
+  }
+  30%{
+    width: 20%;
+    opacity: 0.6;
+  }
+  50%{
+    width: 50%;
+  }
+  100%{
+    width: 100%;
+    opacity:1;
+  }
+}
+@keyframes show{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+}
+.btn{
+  text-align: center;
+  margin-top: 100px;
+  &-title{
+    width: 50%;
+  }
+  &-next{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+  }
+  .dots-list{
+    display: flex;
+    width: 40%;
+    margin: 10px auto 0;
+    justify-content: space-between;
+    &__item{
+      width: 15px;
+      height: 15px;
+      background-color: black;
+      opacity:0.5;
+      border-radius: 50%;
+      &:first-child{
+        opacity:0.9;
+      }
+    }
+  }
+}
+
+.story-common{
+  .story-list__item:nth-of-type(3){
+    background-color: #2b2c2d;
+    margin-top:200px;
+    .story-item__img{
+      margin-top: -80px;
+    }
+    .story-item__txt{
+      color: white;
+    }
+  }
+  .story-list__item:nth-of-type(4){
+    background-color: white;
+    .story-item__txt{
+      color: black;
+    }
+  }
+  .btn-top-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    .btn-left{
+      width: 46%;
+      .btn-title{
+        width:100%;
+      }
+      .btn-back{
+        width: 100%;
+      }
+    }
+    .btn-right{
+      width: 46%;
+      .btn-title{
+        width:100%;
+      }
+      .btn-next{
+        width: 100%;
+      }
+    }
+  }
+  .dots-list{
+    &__item:nth-of-type(1){
+      opacity: 0.5;
+    }
+    &__item:nth-of-type(2){
+      opacity: 0.9;
+    }
+  }
+}
+.story02{
+  display: none;
+}
+.story03{
+  display: none;
+  .dots-list{
+    &__item:nth-of-type(2){
+      opacity: 0.5;
+    }
+    &__item:nth-of-type(3){
+      opacity: 0.9;
+    }
+  }
+}
+.story-list{
+.story-item__img-pc{
+  display: none;
+}
+.story-item__img-sp-auc{
+  margin:0;
+}
+}
+.story-item__img02-right{
+  display: none;
+}
+.story-item__img02{
+  display: none;
+}
+.car02{
+  display:none;
+}
+.hero-pic-pc{
+  display: none;
+}
+.title-txt-pc{
+  display: none;
+}

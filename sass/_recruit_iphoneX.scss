@@ -1,0 +1,112 @@
+@import "recruit_common_iphoneX.scss";
+
+.arrow-left{
+  display: none;
+}
+.arrow-right{
+  display: none;
+}
+.hero{
+  width: 95%;
+  margin: 0 auto;
+  .title{
+    width: 25%;
+    &-img{
+      width: 100%;
+      margin-top: 100px;
+    }
+  }
+  &-list{
+    width: 95%;
+    margin: 100px auto 0;
+    padding:30px;
+    &__item{
+      width: 100%;
+      text-align: center;
+      .item-img{
+        width:100%;
+      }
+      .txt{
+        text-align: center;
+        font-size: 0.8rem;
+      }
+      .item-title{
+        margin: 0 auto;
+        background-color: black;
+        color: yellow;
+        display: inline-block;
+      }
+      .item-txt{
+        text-align: left;
+        line-height: 1.5;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+.btn-img-prev{
+  width: 5%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-120%);
+  z-index: 3;
+}
+.btn-img-next{
+  width: 5%;
+  transform: rotate(180deg) translateX(-120%);
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+}
+.slick-disabled{
+  display:none !important;
+}
+.recruit-list__item-img-pc{
+  display: none;
+}
+.recruit-list{
+  margin-top:100px;
+  width: 100%;
+  &__item{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    .detaile{
+      display: none;
+    }
+    .recruit-click-after{
+      position: absolute;
+      top:2px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, 200px);
+      background-color: white;
+      width: 90%;
+      height: 90%;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      opacity:0.8;
+      transition: 0.5s;
+      &__txt{
+       background-color: red;
+       padding:10px 30px;
+       position: relative;
+       &:before{
+         content:url("../image/recruit_arrow.svg");
+         position: absolute;
+         top:55%;
+         left: 2%;
+         display: inline-block;
+         width: 15px;
+         height: 15px;
+         transform:translateY(-50%) rotate(180deg);
+        }
+      }
+    }
+      &-img{
+      width: 100%;
+     }
+  }
+}

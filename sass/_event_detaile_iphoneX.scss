@@ -1,0 +1,251 @@
+
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.l_home{
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+.to-top-pc{
+  display: none;
+  position: fixed;
+  bottom: 20%;
+  right: 0;
+  width: 15%;
+  transform: translateX(80%);
+  z-index: 2;
+  transition: 0.2s;
+}
+.gloval-container{
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+}
+.l_main{
+  overflow: hidden;
+}
+.nav{
+  display: none;
+}
+.l_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.1s;
+}
+.is_header_active{
+  background-color: #323232;
+}
+.nav-list-pc{
+  display: none;
+}
+.nav-btn{
+  width: 8%;
+  margin-right: 5%;
+  &-img{
+    width: 100%;
+  }
+  &-batu{
+    display: none;
+    width: 100%;
+  }
+}
+.nav-50th{
+  width: 100%;
+  margin-top: 70px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(100%);
+  transition: 0.1s;
+  z-index: 1;
+  .nav-list{
+    width: 100%;
+    height: 100%;
+    height: 60%;
+    .nav-item{
+      width: 100%;
+      height: calc(100% / 6);
+      a{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+      }
+      &:nth-child(even){
+        background-color: #323232;
+      }
+      &:nth-child(odd){
+        background-color: #4d4d4d;
+      }
+      &__img{
+        width: 40%;
+      }
+    }
+  }
+  .nav-link{
+    width: 100%;
+    height: 40%;
+    background-color: #4d4d4d;
+    padding-top: 5%;
+    text-align: center;
+    .link-list{
+      width: 80%;
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 auto;
+      align-items: center;
+      &__item{
+        width: 15%;
+        &-img{
+          width: 100%;
+        }
+      }
+    }
+    .copy-txt{
+      margin-top: 5%;
+      font-size: 0.6rem;
+      color: white;
+    }
+  }
+}
+.is_nav-50th_active{
+  position: fixed;
+  transform: translateX(0);
+}
+.l_main{
+  width: 100vw;
+  background-image: url("../image/bg_eventdetail.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.hero{
+  margin-top:100px;
+  text-align: center;
+  .title{
+    width: 100%;
+    &__img{
+      width: 90%;
+    }
+  }
+}
+.hero-body{
+  width: 90%;
+  display: block;
+  margin: 30px auto 0;
+}
+.title__img-pc{
+  display: none;
+}
+.event-detaile{
+  width: 90%;
+  margin: 0 auto;
+  .detaile-title{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100px;
+    height: 20px;
+    margin-top:20px;
+    &:nth-of-type(1){
+      background-image: url("../image/txt_schedule.png");
+    }
+    &:nth-of-type(2){
+      background-image: url("../image/txt_place.png");
+      font-weight: bold;
+    }
+    &:nth-of-type(3){
+      background-image: url("../image/txt_time.png");
+    }
+    &:nth-of-type(4){
+      font-weight: bold;
+      background-image: url("../image/txt_content.png");
+      width:150px;
+    }
+  }
+  .detaile-txt{
+    margin-top:10px;
+    text-align: right;
+    &:nth-of-type(4){
+      line-height: 1.4;
+      text-align: left;
+    }
+  }
+  .map{
+    margin-left:10px;
+  }
+  .map-img{
+    width:100px;
+  }
+}
+.event-img-under{
+  width: 90%;
+  display: block;
+  margin: 30px auto 30px;
+}
+.modal{
+  display:  none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, .8);
+  left: 0;
+  top: 0;
+  &-inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .modal-inner__cover{
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  iframe{
+    width: 100%;
+    height: 100%;
+  }
+  .close-btn{
+    width: 50px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+  }
+}
+.tsuchiya-list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  list-style: none;
+  margin-top: 30px;
+  &__item{
+    width: 50%;
+    &-img{
+      width: 100%;
+      vertical-align: bottom;
+    }
+  }
+}
+.l_footer{
+  background-color: white;
+  .link-list{
+    padding-bottom: 20px;
+  }
+  .copy-txt{
+    background-color: #323232;
+    color:white;
+  }
+}

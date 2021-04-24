@@ -1,0 +1,43 @@
+.recruit-btn{
+  width: 90px;
+  height: 90px;
+  position:fixed;
+  right:0;
+  transform:translateX(50%);
+  bottom: 20%;
+  z-index: 20;
+  &__inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  &-bg-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    animation: recruit-btn-rotate 5s linear infinite reverse;
+  }
+  &-top-img{
+    width: 70%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    animation: recruit-btn-rotate 5s linear infinite;
+  }
+  @keyframes recruit-btn-rotate{
+    0% {
+      transform: translate(-50%,-50%) rotate(0deg)
+    }
+    100% {
+      transform: translate(-50%,-50%) rotate(360deg)
+    }
+  }
+  .recruit-btn-after{
+    display: none;
+  }
+  .recruit-btn-active{
+    opacity:0;
+  }
+}

@@ -1,0 +1,143 @@
+@import "contact_iphoneX.scss";
+@media screen and (min-width: 1080px) {
+  .l_header{
+    width: 100%;
+    .link-list{
+      width: 25%;
+    }
+    .title__logo-img-pc{
+      width: 50%;
+      animation: rotate-company-top 5s linear infinite;
+    }
+    @keyframes rotate-company-top {
+      0%{
+        transform: translateX(75%) rotate(0deg);
+      }
+      100%{
+        transform: translateX(75%) rotate(360deg);
+      }
+    }
+  }
+  .l_main{
+    padding-bottom: 200px;
+    width: 90%;
+    margin: 20px auto 0;
+    border-top: 3px solid gray;
+    .contact-title{
+      position: absolute;
+      width: 10%;
+      background-color: yellowgreen;
+      text-align: right;
+      border-radius: 0 30px 30px 0;
+      top: 20%;
+      left: 5%;
+      padding: 10px 15px;
+      &__img{
+        width:70%;
+      }
+    }
+  }
+  .hero{
+    width: 60%;
+    .title{
+      &-img{
+        display: none;
+      }
+    }
+    .form-title{
+      font-size: 0.8rem;
+      background-color: white;
+      color: yellowgreen;
+      border: 1px solid yellowgreen;
+      &:before{
+        opacity: 0;
+      }
+    }
+    .is_form-title_active{
+      background-color: yellowgreen;
+      color: white;
+      &:before{
+        opacity: 1;
+      }
+    }
+  }
+  .contact{
+    width:90%;
+    margin: 0 auto;
+    .form-data-select-width{
+      width:40%;
+    }
+    .margin-top{
+      margin-top: 10px;
+    }
+  }
+  .contact-top{
+    display: flex;
+    width: 100%;
+    .form-title{
+      width: 23%;
+      padding:8px 0;
+    }
+  }
+  .error-message{
+    display:none;
+  }
+  .devide{
+    margin-top:30px;
+    display:flex;
+    justify-content: space-between;
+    &-left{
+      width:40%;
+    }
+    &-right{
+      width:60%;
+    }
+  }
+  
+  .to-confirmation-page{
+    width:40%;
+    background-color: yellowgreen;
+    a{
+    color:red;
+    }
+  }
+  .birth{
+    display: none;
+  }
+  .about{
+    display: none;
+  }
+  .l_footer{
+    .footer-logo{
+      display: block;
+      text-align: center;
+      padding: 10px 0;
+      &__img{
+        width: 20%;
+      }
+    }
+  }
+  .contact-title-sub{
+   display: none;
+  }
+  .contact{
+    display: block;
+  }
+  .error-message{
+    display: block;
+  }
+  .form-title{
+    &:before{
+      display: block;
+    }
+  }
+  .l_footer{
+    position:static;
+  .link-list{
+    display: none;
+  }
+  .privacy{
+    display: none;
+  }
+}
+}

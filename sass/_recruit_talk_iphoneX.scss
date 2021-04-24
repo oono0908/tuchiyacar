@@ -1,0 +1,70 @@
+@import "recruit_common_iphoneX.scss";
+.hero{
+  width: 95%;
+  margin: 0 auto;
+  .title{
+    width: 25%;
+    &-img{
+      width: 100%;
+      margin-top: 100px;
+    }
+  }
+}
+.talk-title{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  &__img{
+    width: 70%;
+  }
+}
+.talk-img-list{
+  width:95%;
+  margin: 50px auto 0;
+  justify-content: center;
+  display: flex;
+
+  &__item{
+    width: 23%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid yellow;
+    &:nth-of-type(1){
+      transform: translateY(-20%);
+    }
+    &:nth-of-type(2){
+      transform: translateY(20%);
+    }
+    &:nth-of-type(3){
+      transform: translateY(-20%);
+    }
+    &:nth-of-type(4){
+      transform: translateY(20%);
+    }
+    .item-img{
+      width: 100%;
+    }
+  }
+}
+.talk-txt{
+  margin-top:50px;
+  line-height: 1.5;
+  font-size: 0.8rem;
+}
+.cross-talk-list{
+  width: 90%;
+  margin: 100px auto 0;
+  &__item{
+    width: 100%;
+    margin-top: 20px;
+    .cross-talk__img{
+      width: 100%;
+    }
+  }
+}
+.pic-slide-list{
+  display:none;
+}
+.crosstalk-img{
+  display:none;
+}

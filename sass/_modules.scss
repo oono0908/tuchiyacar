@@ -1,0 +1,45 @@
+@keyframes flash1{
+  0% {
+    opacity: 0;
+}
+7% {
+    opacity: 1;
+}
+26% {
+    opacity: 1;
+}
+33% {
+    opacity: 0;
+}
+
+}
+@keyframes flash2{
+  33%{
+    opacity: 0;
+   }
+  40% {
+   opacity: 1;
+  }
+   59% {
+   opacity: 1;
+   }
+  66% {
+   opacity: 0;
+ }
+}
+
+@keyframes flash3{
+  66% {
+    opacity: 0;
+}
+73% {
+    opacity: 1;
+}
+93% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+}
+
+}

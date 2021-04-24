@@ -1,0 +1,148 @@
+@media screen and (min-width: 1080px) {
+  @import "recruit_common_pc.scss";
+  .hero{
+    .title{
+      display: none;
+    }
+  }
+  .hero-talk-img{
+    display: none;
+  }
+  .hero-top-devide{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    .hero-top-left{
+      width: 60%;
+    }
+    .hero-talk-img-pc{
+      width: 100%;
+    }
+    .hero-top-right{
+      width: 40%;
+    }
+    .hero-talk-txt{
+      width: 70%;
+      margin-top:10%;
+      margin-left:15%;
+    }
+    .title-cross-talk01{
+      &:before{
+        right: 50%;
+      }
+    }
+  }
+  .profile{
+    &__title{
+      display: none;
+    }
+    &-person{
+      width: 50%;
+      .profile-person__img-sp{
+        display: none;
+      }
+      &__img{
+        width: 100%;
+      }
+    }
+  }
+  .person-left,.person-right{
+    position:relative;
+  }
+  .person-left-txt,.person-right-txt{
+    position: absolute;
+    top: 50%;
+    right: -20%;
+    width: 70%;
+    font-size: 0.7rem;
+  }
+  .session{
+    width: 70%;
+    margin: 0 auto;
+    &-title-devide{
+      display: flex;
+      margin-top: 5%;
+      align-items: center;
+    }
+    .session__title{
+      width: 20%;
+      margin-top: 0;
+      &-img{
+        width:100%;
+      }
+    }
+    .session__conversation-title{
+      margin-top:0;
+      padding: 5px;
+      font-size: 1.2rem;
+      margin-left: 10px;
+    }
+    &-talk{
+      padding: 30px 50px;
+    }
+  }
+  .talk-inner-btn{
+    width: 40%;
+    &-img{
+      width: 30%;
+    }
+    .btn-txt{
+      display: inline-block;
+      background-color: black;
+      color: yellow;
+      font-size: 0.7rem;
+    }
+    .btn-right{
+      width: 50%;
+    }
+  }
+  .cross-talk-list{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__item{
+      width: 30%;
+      position: relative;
+      overflow: hidden;
+      .recruit-click-after{
+        position: absolute;
+        top:2px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 200px);
+        background-color: white;
+        width: 90%;
+        height: 90%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+        background-image: url("../image/recruit_talk_bg.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        &__txt{
+         color: white;
+         padding:10px 30px;
+         position: relative;
+          .crosstalk-img{
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+  .hero-talk-img-pc{
+    display:block;
+  }
+  .person-left{
+    display: block;
+  }
+  .person-right{
+    display: block;
+  }
+  .btn-txt{
+    display: block;
+  }
+}
