@@ -8,6 +8,9 @@
   height: 100vh;
   overflow: scroll;
 }
+.l_groval-container{
+  overflow-x: hidden;
+}
 
 .l_header {
   text-align: center;
