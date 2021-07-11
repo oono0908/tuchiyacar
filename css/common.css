@@ -4,6 +4,7 @@
 
 .l_home {
   width: 100vw;
+  overflow:hidden;
 }
 
 .l_header {
