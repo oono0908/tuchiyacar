@@ -7,7 +7,9 @@
   position: fixed;
   overflow: scroll;
 }
-
+.l_main{
+  overflow: hidden;
+}
 .hero {
   width: 100%;
   padding-bottom: 70px;
@@ -27,7 +29,9 @@
   width: 100%;
   margin-top: 50px;
 }
-
+.recruit-btn-active{
+  display: none;
+}
 .hero-list__item {
   width: 100%;
   text-align: center;
@@ -523,8 +527,8 @@
   width: 90px;
   height: 90px;
   position: fixed;
-  right: 0;
-  transform: translateX(50%);
+  right: -45px;
+  /* transform: translateX(50%); */
   bottom: 20%;
   z-index: 20;
 }
@@ -892,6 +896,7 @@
     width: 140px;
     height: 140px;
     transition: 0.3s;
+    right: 0;
   }
   .recruit-btn-active {
     width: 140px;
@@ -909,5 +914,8 @@
     z-index: 10;
     opacity: 0;
     transition: 0.3s;
+  }
+  .recruit-btn-active{
+    display: block;
   }
 }
